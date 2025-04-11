@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins";
+  list-style: none;
+  color: black;
+}
+nav.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 10%;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+ul.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2em;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.logo {
+  font-size: 1.5rem;
+  color: transparent;
+  background: linear-gradient(133deg, #3e08f0, #e40040e8);
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar button,.anav {
+  padding: 0.85em 2em;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1rem;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(136deg, #cf00ff, #1606e9) border-box;
+  border: 2px solid transparent;
+  color: black;
+  font-weight: 700;
+  transition: all ease 0.25s;
+  cursor: pointer;
+}
+.navbar button:hover,.anav:hover {
+  background: linear-gradient(460deg, #cf00ff, #1606e9) border-box;
+  color: white;
+  transition: 0.3s ease;
+}
+.navlinks a::after {
+  width: 35%;
+  margin-top: 2.5%;
+  height: 2px;
+  content: "";
+  display: block;
+  background: linear-gradient(45deg, #cf00ff, #1606e9);
+  border-radius: 2rem;
+  transition: all ease 0.25s;
 }
 
-.card {
-  padding: 2em;
+.navlinks li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navlinks li a:hover::after{
+  width: 60%;
+}
+footer#Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.r1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c2 {
+  width: 35%;
+  border-left: 1px solid white;
+  padding-left: 1.5em;
+  height: fit-content;
+  padding-bottom: 40px;
+}
+
+footer#Footer {
+  background: black;
+  color: white;
+}
+
+#Footer p {
+  color: white;
+  font-weight: 200;
+}
+
+footer#Footer {
+  padding: 6% 3%;
+}
+
+h1.Falcons {
+  color: white;
+  margin-top: 6%;
+  font-size: 6rem;
+}
+
+h2.qubits {
+  color: white;
+  font-size: 5rem;
+}
+
+h1.Falcons,h2.qubits {
+  line-height: 92%;
+}
+
+.c2 h1 {
+  color: white;
+  font-size: 3rem;
 }
